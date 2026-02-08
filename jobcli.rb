@@ -5,21 +5,21 @@
 class Jobcli < Formula
   desc "Fast, single-binary job aggregation CLI."
   homepage "https://github.com/jimezsa/jobcli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.0/jobcli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "876b8b9350052f1ccc10615ae340db515b2f3ef6a1e934587236731bc0655a92"
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.1/jobcli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "57f63c01b53d65306dda0b19f886ef5f0b0245f9012b24a823554da9827aa391"
 
       def install
         bin.install "jobcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.0/jobcli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c42d7a1a993a28623209a2cc1182f53e832dc017530d513e802de0d3596a2987"
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.1/jobcli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "8e8460f6aed90c29baf2cb4edb3dce8b999548550657417b6e024ab5b546254f"
 
       def install
         bin.install "jobcli"
@@ -29,15 +29,15 @@ class Jobcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.0/jobcli_0.1.0_linux_amd64.tar.gz"
-      sha256 "d0802371161d7000ff863c0899ff5e1e33705b4e04a968ba2eec9f3049b9da35"
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.1/jobcli_0.1.1_linux_amd64.tar.gz"
+      sha256 "19947fcd5afa678362a5ef94380ea36af2e3363ee3dc23f68070797dce7f5908"
       def install
         bin.install "jobcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.0/jobcli_0.1.0_linux_arm64.tar.gz"
-      sha256 "83dace6fbbd75b0d9ebf24f7cae9bc6f8d6605b4235b82554517f221d8470946"
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.1.1/jobcli_0.1.1_linux_arm64.tar.gz"
+      sha256 "5dbc169d4c500ad2ff7893bb8a2e33b54f9b8022781063167c92d2f8df00d638"
       def install
         bin.install "jobcli"
       end
