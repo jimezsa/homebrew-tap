@@ -5,23 +5,23 @@
 class Jobcli < Formula
   desc "Fast, single-binary job aggregation CLI."
   homepage "https://github.com/jimezsa/jobcli"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.0/jobcli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "2b7f9af07f9985ade8743b3bcd04bf36a8c66a4caf3e77a1669dc2a92c9c574f"
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.1/jobcli_0.2.1_darwin_amd64.tar.gz"
+      sha256 "1c5352f64adc613a38a19dabb00abed49096ee282a564f5072c1abd1649fb3ba"
 
-      def install
+      define_method(:install) do
         bin.install "jobcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.0/jobcli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "98ce9b4cfe940a20b503e642a6fbbe4cdc5296d78f286489830669ff3d1d13bb"
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.1/jobcli_0.2.1_darwin_arm64.tar.gz"
+      sha256 "c56b013befc9cc95d8b38836efdb36383f8fc86736922f1a264cb914ea68ff92"
 
-      def install
+      define_method(:install) do
         bin.install "jobcli"
       end
     end
@@ -29,16 +29,16 @@ class Jobcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.0/jobcli_0.2.0_linux_amd64.tar.gz"
-      sha256 "dc5df0e6e901aff94570061bf84392f7de066f9cb4ba6be7a00144fda377e67c"
-      def install
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.1/jobcli_0.2.1_linux_amd64.tar.gz"
+      sha256 "9425aebd1778f660c7f237714b1cbaa80a7d98125490194202dcbbeb254f469d"
+      define_method(:install) do
         bin.install "jobcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.0/jobcli_0.2.0_linux_arm64.tar.gz"
-      sha256 "334fc5eed2fbaf7a993239da1a0b41ed9bb2293087b28b99e1495b1ae6a3e485"
-      def install
+      url "https://github.com/jimezsa/jobcli/releases/download/v0.2.1/jobcli_0.2.1_linux_arm64.tar.gz"
+      sha256 "d8b4beb6ac72c46ddf7e77cb70cf899ef7fd178b0c59cd3ceb0dfb8c8cfdfc87"
+      define_method(:install) do
         bin.install "jobcli"
       end
     end
