@@ -5,21 +5,21 @@
 class Papercli < Formula
   desc "Scientific papers from your terminal."
   homepage "https://github.com/jimezsa/papercli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jimezsa/papercli/releases/download/v0.1.1/papercli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "d0aa2acf21e23f285b003a48e0a5893c7eb72b0e97987bdad4f9a95ffa66bf88"
+      url "https://github.com/jimezsa/papercli/releases/download/v0.1.2/papercli_0.1.2_darwin_amd64.tar.gz"
+      sha256 "7462c93fb205f39ab59bfcfc81897bb283057b112404613e171be25a5121ec2a"
 
       define_method(:install) do
         bin.install "papercli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jimezsa/papercli/releases/download/v0.1.1/papercli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "9920f21fcbbf59b7446cd300c1a52fdfc5c8b5d2033ab1f1e602ef3c4f71c8fd"
+      url "https://github.com/jimezsa/papercli/releases/download/v0.1.2/papercli_0.1.2_darwin_arm64.tar.gz"
+      sha256 "bb9f52c162ebf99d6b4a89a38446284dec9b3fe29934c5c15a31da69b8f99c2f"
 
       define_method(:install) do
         bin.install "papercli"
@@ -29,15 +29,15 @@ class Papercli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimezsa/papercli/releases/download/v0.1.1/papercli_0.1.1_linux_amd64.tar.gz"
-      sha256 "a3d8451a894fe00f97ec3b7ba09d6c3e60d86f8a0de2ee6531c599859bb820e8"
+      url "https://github.com/jimezsa/papercli/releases/download/v0.1.2/papercli_0.1.2_linux_amd64.tar.gz"
+      sha256 "e1cf3bdc41683aea9ef24ecd2e7f117ab59a6b5dfdc7186aba789ca588e22f8a"
       define_method(:install) do
         bin.install "papercli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimezsa/papercli/releases/download/v0.1.1/papercli_0.1.1_linux_arm64.tar.gz"
-      sha256 "c4946958f10749b949f641b182d69ff057e9cbc420871ed1b78fcca85ac648bc"
+      url "https://github.com/jimezsa/papercli/releases/download/v0.1.2/papercli_0.1.2_linux_arm64.tar.gz"
+      sha256 "7cea350689d308ef81ac9c35e01f72293e4bf713e1d6dfa3c0f1a5d32eda1c0b"
       define_method(:install) do
         bin.install "papercli"
       end
